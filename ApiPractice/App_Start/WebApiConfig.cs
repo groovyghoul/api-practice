@@ -10,7 +10,7 @@ namespace ApiPractice
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            //config.Filters.Add(new IdentityBasicAuthenticationAttribute());
+            config.Filters.Add(new ForceHttpsAttribute());
 
             // Web API routes
             config.MapHttpAttributeRoutes();
