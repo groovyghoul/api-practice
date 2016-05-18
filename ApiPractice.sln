@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{E5625DE2-4E17-4288-9390-33B7B8D9F1D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiPractice", "ApiPractice\ApiPractice.csproj", "{129EE04A-EA19-48A8-A039-EC77606CF4C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "WebClient\WebClient.csproj", "{404B4F69-01CF-4CA2-A97B-A414E10DD840}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{129EE04A-EA19-48A8-A039-EC77606CF4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{129EE04A-EA19-48A8-A039-EC77606CF4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{129EE04A-EA19-48A8-A039-EC77606CF4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{404B4F69-01CF-4CA2-A97B-A414E10DD840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404B4F69-01CF-4CA2-A97B-A414E10DD840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404B4F69-01CF-4CA2-A97B-A414E10DD840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404B4F69-01CF-4CA2-A97B-A414E10DD840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

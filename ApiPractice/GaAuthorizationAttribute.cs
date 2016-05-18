@@ -102,8 +102,7 @@ namespace ApiPractice
         private void HandleUnauthorizedRequest(System.Web.Http.Controllers.HttpActionContext actionContext)
         {
             actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.Unauthorized);
-            actionContext.Response.Headers.Add("WWW-Authenticate",
-            "Basic Scheme='bytemares' location='http://localhost/login'");
+            actionContext.Response.Headers.Add("WWW-Authenticate", "Basic Scheme='bytemares' location='http://localhost/login'");
         }
 
         private bool FakeLogin(string username, string password)

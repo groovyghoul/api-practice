@@ -25,21 +25,17 @@ namespace ConsoleClient
         {
             using (var client = new HttpClient())
             {
-                //client.BaseAddress = new Uri("http://localhost:1275/");
                 client.BaseAddress = new Uri("https://localhost:44302/");
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 // bWlja2V5Om1vdXNl  ISO-8859-1 ===> mickey:mouse
-                //var x = Encoding.GetEncoding("ISO-8859-1");
+                // ZG9uYWxkOmR1Y2s=  ISO-8859-1 ===> donald:duck
                 var y = "mickey:mouse";
-                //var z = Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(y));
-                var encoded = Convert.ToBase64String(System.Text.Encoding.GetEncoding("ISO-8859-1").GetBytes(y));
-                // ZG9uYWxkOmR1Y2s=      ISO-8859-1 ===> donald:duck
+                var encoded = Convert.ToBase64String(Encoding.GetEncoding("ISO-8859-1").GetBytes(y));
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", encoded);
 
                 client.DefaultRequestHeaders.Add("X-Api-Key", "ABC123");
 
-                // New code:
                 HttpResponseMessage response = await client.GetAsync("api/products/1");
                 if (response.IsSuccessStatusCode)
                 {
